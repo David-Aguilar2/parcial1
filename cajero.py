@@ -26,7 +26,7 @@ def sesion():
             opcion=input("Menú: \nIngresa 1 para consultar tu saldo.\n2 para hacer un retiro.\n3 para salir.\n")
         
         if opcion=="1":
-            print("$"+saldo)
+            print(f"${saldo}")
 
         if opcion=="2":
            retiro=input("Ingresa la cantidad a retirar: $")
