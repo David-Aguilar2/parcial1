@@ -26,7 +26,7 @@ def sesion():
             opcion=input("Menú: \nIngresa 1 para consultar tu saldo.\n2 para hacer un retiro.\n3 para salir.\n")
         
         if opcion=="1":
-            print(saldo)
+            print("$"+saldo)
 
         if opcion=="2":
            retiro=input("Ingresa la cantidad a retirar: $")
@@ -41,4 +41,4 @@ def sesion():
                print("\nError, la cantidad retiro es mayor a tu saldo\n")
                retiro=input("Ingresa la cantidad a retirar: $")
 
-           print(f"\nRetiro hecho exitosamente, tu nuevo saldo es {saldo-int(retiro)}")
+           print(f"\nRetiro hecho exitosamente, tu nuevo saldo es ${saldo-int(retiro)}")
